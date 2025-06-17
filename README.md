@@ -16,34 +16,32 @@ Implement a reproducible and auditable data pipeline using Data Version Control 
 The project is organized into several key tasks:
 
 ### Data Collection and Preprocessing
+Acquisition of relevant data such as TotalPremium, TotalClaims, and vehicle/customer characteristics.
 
-Gather historical insurance data (including TotalPremium, TotalClaims, and vehicle-related features).
+Data cleaning (handling missing values, correcting data types, filtering outliers).
 
-Clean and preprocess the data (handling missing values, correcting data types, etc.).
-
-Store cleaned data for further analysis.
+Storage of cleaned datasets for analysis and modeling.
 
 ### Exploratory Data Analysis (EDA) and Statistical Profiling
+Univariate and bivariate analyses to uncover distributions and relationships.
 
-Perform univariate and bivariate analyses to uncover key trends and correlations.
+Visualization of key variables to highlight trends and patterns.
 
-Visualize distributions of numerical variables and relationships between features.
+Identification of statistically significant factors impacting premiums and claims.
 
-Identify significant factors influencing premiums and claims.
+### Data Version Control and Pipeline Structuring
+Setup of DVC for dataset tracking and versioning.
 
-### Data Version Control and Pipeline Structuring (DVC)
+Modular structuring of the pipeline to support experimentation and reproducibility.
 
-Set up DVC to version control datasets and ensure reproducibility.
+### Predictive Modeling and Statistical Validation
+Development of classification models to predict claim likelihood.
 
-Structure data pipeline for modular and iterative analysis and modeling.
+Segmentation of customers based on predicted risk levels.
 
-Predictive Modeling and Statistical Validation
+Statistical validation of hypotheses related to gender, location, and other features.
 
-Build predictive models to identify low-risk segments and optimize premium pricing.
-
-Validate key hypotheses regarding risk drivers using statistical tests.
-
-Evaluate models for accuracy and effectiveness in predicting insurance claims.
+Evaluation of model performance using metrics like accuracy, recall, and ROC-AUC.
 
 ## Technologies and Tools Used
 * Python: For data manipulation, analysis, and visualization.
@@ -56,8 +54,5 @@ Evaluate models for accuracy and effectiveness in predicting insurance claims.
 
 * GitHub: For version control and collaboration.
 
-## Future Work
-Statistically validate risk drivers (e.g., geographical and vehicle characteristics) for the basis of segmentation.
 
-Develop predictive models to create a dynamic pricing system based on risk factors.
 
